@@ -1,0 +1,112 @@
+@keyframes blueball-spin{
+    0% { transform: rotate(-360deg); top: -40px; left: 0px;
+    }
+    5% {
+        transform: rotate(10deg); top: -40px; left: 105px;
+    }
+    5.2% {
+        transform: rotate(20deg); top: -40px; left: 105px;
+    }
+    5.6% {
+        transform: rotate(140deg); top: -22px; left: 120px;
+    }
+
+    25% {
+        transform: rotate(1080deg); top: -18px; left: 545px;
+    }
+    25.2% {
+        transform: rotate(1080deg); top: 30px; left: 550px;
+    }
+    35% {
+        transform: rotate(-20deg); top: 33px; left: 210px;
+    }
+    36% {
+        transform: rotate(-30deg); top: 33px; left: 210px;
+
+    }
+    36.3% {
+        transform: rotate(-10deg); top: 85px; left: 190px;
+
+    }
+    38% {
+        transform: rotate(100deg); top: 85px; left: 250px;
+    }
+
+    50.9% {
+        transform: rotate(1080deg);
+         top: 97px; left: 700px;
+    }
+
+    51.2% {
+        transform: rotate(1080deg);  top: 150px; left: 705px;
+    }
+
+    70% {
+        transform: rotate(-90deg);  top: 154px; left: 350px;
+    }
+
+    72% {
+        transform: rotate(-90deg);  top: 156px; left: 350px;
+
+    }
+
+    80% {
+        transform: rotate(-90deg);  top: 280px; left: 320px;
+    }
+    100% {
+            transform: rotate(-1080deg) scale(3); 
+            top: 450px; left: 200px; 
+        }
+
+
+
+    
+}
+
+
+
+
+
+
+body {
+    background: url("../assets/backgroud- image.jpg");
+    background-size: cover;
+    background-position: 0 -150px;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #5555fe;
+    position: absolute;
+    top: -100px;
+    left: -200px;
+
+}
+
+h1:hover ~ #blue-ball {
+
+    animation-name: blueball-spin;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+
+}
+
+
+#canvas {
+    background: url("../assets/playground2.png");
+    background-repeat: no-repeat;
+    height:700px;
+    width: 70%;
+    margin: 100px auto;
+    position: relative;
+
+}
+
+#blue-ball {
+    height: 40px;
+    position: absolute;
+    top: -49px; 
+
+
+}
+
